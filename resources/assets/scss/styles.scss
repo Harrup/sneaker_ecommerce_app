@@ -85,6 +85,11 @@ header{
   }
 }
 .content-area{
+  filter: blur(0px);
+  transition: filter .4s ease-in-out;
+  &.cart-popup-active{
+    filter: blur(20px);
+  }
   &.home-page{
 
   }
@@ -93,6 +98,7 @@ header{
   background: #E3E8EC;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   position: relative;
   .product{
     position: relative;
@@ -139,8 +145,24 @@ header{
   bottom: 0;
   width: 100%;
   background: #ecf0f3;
-  height: 300px;
+  height: 200px;
+  transform: translate3d(0, 500px, 0);
+  transition: transform .4s ease-in-out;
+  &.active{
+    transform: translate3d(0, 0, 0);
+  }
+  .cart-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: lightgray;
+    transform: rotate(-90deg);
+  }
   .cart-items{
+    overflow-x: hidden;
+    overflow-y: scroll;
     .item{
       display: flex;
       flex-direction: column;
@@ -148,13 +170,12 @@ header{
       justify-content:center;
       width: 200px;
       position: relative;
-      padding: 50px 0;
+      padding: 20px 0;
       img{
         position: absolute;
         width: 80%;
-        top:20px;
-        top: -20px;
-        left: -33px;
+        top: -15px;
+        left: -10px;
       }
       .delete-btn{
         border-radius: 20px;
@@ -179,6 +200,53 @@ header{
 
           }
         }
+      }
+    }
+  }
+  .cart-total-products, .cart-total-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cart-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-left: 2px solid gray;
+      width: 100%;
+      .total{
+        background: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: lightgray;
+        margin-bottom: 2rem;
+      }
+      .number{
+        color: lightgray;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .cart-checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+    .checkout{
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .fab{
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all .4s ease-in-out;
+      &:hover{
+        color: red;
       }
     }
   }
