@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
+  <title>
+    @!section('title')
+  </title>
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -17,19 +19,8 @@
     </div>
   </header>
 
-  <section class="content-area home-page">
-    <div class="top-section">
-      <div class="product">
-        <div class="circle">
-          <img src="img/products/adidas-yeezy-boost-white.png">
-        </div>
-      </div>
-      <div class="titles">
-        <h3>Yeezy</h3>
-        <h1>Boost 350</h1>
-      </div>
-    </div>
-  </section>
+
+    @!section('content')
 
   <section id="cart-popup" class="">
     <div class="cart-title">
