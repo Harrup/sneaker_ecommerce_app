@@ -2,6 +2,7 @@
 @import "reset";
 @import "pages/about";
 @import "pages/home";
+@import "products/all";
 
 
 
@@ -9,7 +10,12 @@ body {
   line-height: 1;
   background: white;
 }
-
+.container{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 ol,
 ul {
   list-style: none;
@@ -55,7 +61,14 @@ header{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2rem;
-    color: #484c4f;
+    a{
+      text-decoration: none;
+      color: #484c4f;
+      transition: color .2s ease-in-out;
+      &:hover{
+        color: red;
+      }
+    }
   }
   .menu{
     font-size: 1rem;
@@ -64,12 +77,20 @@ header{
       text-decoration: none;
       padding-right: 15px;
       color: #484c4f;
+      transition: color .2s ease-in-out;
+      &:hover{
+        color: red;
+      }
       &.cart-link{
         background: #484c4f;
         padding: 10px 20px;
         color: white;
         border-radius: 20px;
         position: relative;
+        transition: all .2s ease-in-out;
+        &:hover{
+          color: red;
+        }
         span{
           position: absolute;
           top: -5px;
@@ -208,4 +229,10 @@ header{
       }
     }
   }
+}
+.box-container{
+  background: white;
+  border-radius: 10px;
+  padding: 80px 20px;
+
 }
