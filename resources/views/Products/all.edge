@@ -13,6 +13,7 @@
         </section>
         <section class="products-section">
           <div class="products-grid">
+            @each(product in products)
             <div class="product-item">
               <div class="product-circle">
                 <img src="img/products/adidas-yeezy-boost-white.png">
@@ -20,21 +21,7 @@
               <h4 class="product-title">Yeezy boost 350 white</h4>
               <h2 class="product-price">$350</h2>
             </div>
-            <div class="product-item">
-              <div class="product-circle">
-                <img src="img/products/adidas-yeezy-boost-white.png">
-              </div>
-              <h4 class="product-title">Yeezy boost 350 white</h4>
-              <h2 class="product-price">$350</h2>
-            </div>
-            <div class="product-item">
-              <div class="product-circle">
-                <img src="img/products/adidas-yeezy-boost-white.png">
-              </div>
-              <h4 class="product-title">Yeezy boost 350 white</h4>
-              <h2 class="product-price">$350</h2>
-            </div>
-
+            @endeach
           </div>
         </section>
       </div>
