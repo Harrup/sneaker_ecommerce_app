@@ -5,12 +5,64 @@
 @endsection
 
 @section('content')
-  <section class="content-area products-all-page">
-    <div class="container">
+  <div class="container">
+    <section class="content-area products-all-page">
       <div class="top-section">
         <section class="filter-section">
-          <h1>Filter</h1>
-        </section>
+
+          <div class="filter">
+            <input type="checkbox" id="gender-option" class="toggle">
+            <label for="gender-option" class="title">Gender</label>
+            <div class="content">
+              <div class="list">
+                <div class="option">Male</div>
+                <div class="option">Female</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="filter">
+          <input type="checkbox" id="brand-option" class="toggle">
+          <label for="brand-option" class="title">Brand</label>
+          <div class="content">
+            <div class="list" id="brand">
+              <div class="option">Nike</div>
+              <div class="option">Adidas</div>
+              <div class="option">Puma</div>
+              <div class="option">Dolce & Gabanna</div>
+              <div class="option">Lonsdale</div>
+              <div class="option">Reebok</div>
+              <div class="option">Under Armour</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="filter">
+        <input type="checkbox" id="size-option" class="toggle">
+        <label for="size-option" class="title">Size</label>
+        <div class="content">
+          <div class="list">
+            <div class="option">5</div>
+            <div class="option">5.5</div>
+            <div class="option">6</div>
+            <div class="option">6.5</div>
+            <div class="option">7</div>
+            <div class="option">7.5</div>
+            <div class="option">8</div>
+            <div class="option">8.5</div>
+            <div class="option">9</div>
+            <div class="option">9.5</div>
+            <div class="option">10</div>
+            <div class="option">10.5</div>
+            <div class="option">11</div>
+            <div class="option">11.5</div>
+            <div class="option">12</div>
+            <div class="option">12.5</div>
+          </div>
+      </div>
+    </div>
+
+  </section>
         <section class="products-section">
           <div class="products-grid">
             @each(product in products)
@@ -25,6 +77,6 @@
           </div>
         </section>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 @endsection
