@@ -1,0 +1,32 @@
+.content-area.show-page{
+  padding: 80px 0;
+  .top-section{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    .product{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      .circle{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        background-color: #ecf0f3;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 151px 0 rgba(156, 156, 156,.27);
+        img{
+          width: 150%;
+        }
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ Route.get('/', 'PageController.home')
 Route.get('/about', 'PageController.about')
 Route.get('/products', 'ProductController.index')
 Route.get('/products/new-arrivals', 'ProductController.newArrivals')
+Route.get('/:brand/:subcategory/:name', 'ProductController.show')
 
 //User Authentication
 Route.get('/account/login', 'AuthController.login')
