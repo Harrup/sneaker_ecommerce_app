@@ -3,6 +3,7 @@
 @import "pages/about";
 @import "pages/home";
 @import "products/all";
+@import "account/login";
 
 
 
@@ -232,7 +233,23 @@ header{
 }
 .box-container{
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 80px 20px;
 
+}
+form{
+  input{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding:10px;
+    border: 1px solid #6c6c6c;
+  }
+  button{
+    padding: 10px;
+    margin-bottom:1rem;
+    background: rgb(27, 108,206);
+    color: white;
+    cursor: pointer;
+    border:1px solid #e5e5e5;
+  }
 }

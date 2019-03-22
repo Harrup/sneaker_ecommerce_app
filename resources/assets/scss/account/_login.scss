@@ -1,0 +1,56 @@
+.content-area.login_register-page{
+  padding: 80px 0;
+  .box-container{
+    width: 700px;
+    margin: 0 auto;
+  h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+  .login-grid{
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-gap: 20px;
+    .social-login{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a{
+        background: #e5e5e5;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(31,31,31);
+        padding: 10px;
+        text-decoration: none;
+        .fab{
+          margin-right: 10px;
+        }
+      }
+    }
+    .line{
+      width: 1px;
+      height:100%;
+      background: #e5e5e5;
+    }
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .forgot-remember{
+    //align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    color: #e6e6e6;
+    a{
+      text-decoration: none;
+    }
+  }
+  }
+}
