@@ -28,5 +28,52 @@
         }
       }
     }
+    .description{
+      background: #ecf0f3;
+      padding: 20px;
+      h3{
+        color: red;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      h1{
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      p{
+        line-height: 1.5;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      
+      .title{
+        background: black;
+        color: white;
+      }
+      .title:after, .title:before{
+          background-color: white !important;
+      }
+    }
+    .checkout-section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:20px;
+      button{
+        height: 48px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: all .2s ease-in-out;
+        &:hover{
+          background: black;
+          color: white;
+        }
+      }
+      .content{
+        p{
+          line-height: 1.5;
+        }
+      }
+    }
   }
 }
