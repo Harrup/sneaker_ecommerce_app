@@ -46,14 +46,16 @@
         font-weight: 400;
         margin-bottom: 1rem;
       }
-      
-      .title{
-        background: black;
-        color: white;
+      .size{
+        .title{
+          background: black;
+          color: white;
+        }
+        .title:after, .title:before{
+            background-color: white !important;
+        }
       }
-      .title:after, .title:before{
-          background-color: white !important;
-      }
+
     }
     .checkout-section{
       display: grid;

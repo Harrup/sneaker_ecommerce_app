@@ -22,6 +22,9 @@ Route.get('/products', 'ProductController.index')
 Route.get('/products/new-arrivals', 'ProductController.newArrivals')
 Route.get('/:brand/:subcategory/:name', 'ProductController.show')
 
+//cart
+Route.get('/cart/checkout', 'CartController.checkout')
+
 //User Authentication
 Route.get('/account/login', 'AuthController.login')
 Route.get('/account/register', 'AuthController.register')
