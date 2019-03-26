@@ -1,0 +1,27 @@
+@layout('/Layouts/main')
+
+@section('title')
+Trainer world | Account
+@endsection
+
+@section('content')
+<section class="content-area account-page">
+  <div class="container">
+    <div class="box-container">
+      <h1>Account</h1>
+      <hr>
+      <div class="account-grid">
+        <div class="account-info">
+          Welcome to the account page
+        </div>
+        <div class="divider-line"></div>
+        <div class="account-options">
+          <a href="/account/order">Order</a>
+          <a href="/account/change-password">Change Password</a>
+          <a href="/account/settings">Settings</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@endsection

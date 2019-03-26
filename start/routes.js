@@ -18,6 +18,8 @@ const Route = use('Route')
 
 Route.get('/', 'PageController.home')
 Route.get('/about', 'PageController.about')
+
+//products
 Route.get('/products', 'ProductController.index')
 Route.get('/products/new-arrivals', 'ProductController.newArrivals')
 Route.get('/:brand/:subcategory/:name', 'ProductController.show')
@@ -25,6 +27,8 @@ Route.get('/:brand/:subcategory/:name', 'ProductController.show')
 //cart
 Route.get('/cart/checkout', 'CartController.checkout')
 
-//User Authentication
+//User Authentication and user account
+Route.get('/account', "AuthController.index")
+Route.get('/account/change-password',"AuthController.changePassword")
 Route.get('/account/login', 'AuthController.login')
 Route.get('/account/register', 'AuthController.register')

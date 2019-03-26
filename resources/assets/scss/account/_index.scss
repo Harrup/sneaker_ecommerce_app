@@ -1,0 +1,32 @@
+.content-area.account-page{
+  padding: 80px 0;
+  h1{
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .account-grid{
+    display: grid;
+    grid-template-columns: 70% 2px 27%;
+    grid-gap:20px;
+  }
+  .divider-line{
+    height: 100%;
+    width: 2px;
+    background-color: grey;
+  }
+  .account-options{
+    background: black;
+    a{
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.3rem;
+      transition: all .2s ease-in-out;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
