@@ -14,6 +14,12 @@ class AuthController {
   changePassword( { view } ){
     return view.render('Account/changePassword')
   }
+  order( { view } ){
+    return view.render('Account/order')
+  }
+  settings( { view } ){
+    return view.render('Account/settings')
+  }
 }
 
 module.exports = AuthController
