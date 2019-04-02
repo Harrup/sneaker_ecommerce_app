@@ -17,6 +17,6 @@ class CartBtn extends Component {
 	}
 }
 
-const cartBtn = document.getElementById('CartBtn');
+const CartBtnRoot = document.getElementById('CartBtnRoot');
 
-ReactDOM.render(<CartBtn />, cartBtn);
+ReactDOM.render(<CartBtn />, CartBtnRoot);

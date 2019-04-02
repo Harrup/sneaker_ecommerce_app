@@ -17,69 +17,18 @@
       <a href="/about">about</a>
       <a href="/products/new-arrivals">new arrival</a>
       <a href="/products">categories</a>
-      <div id="CartBtn"></div>
+      <div id="CartBtnRoot"></div>
     </div>
   </header>
 
 
     @!section('content')
-
-  <section id="cart-popup" class="">
-    <div class="cart-title">
-      <div class="title">My cart</div>
-    </div>
-    <div class="cart-items">
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/products/adidas-yeezy-boost-white.png">
-        <div class="delete-btn">
-          <div class="circle">X</div>
-        </div>
-      </div>
-    </div>
-    <div class="cart-total-products">
-      <div class="cart-container">
-        <div class="total">Total</div>
-        <div class="number">X4</div>
-      </div>
-    </div>
-    <div class="cart-total-price">
-      <div class="cart-container">
-        <div class="total">Total</div>
-        <div class="number">$2000</div>
-      </div>
-    </div>
-    <div class="cart-checkout">
-      <div class="checkout">checkout</div>
-      <i class="fab fa-opencart"></i>
-    </div>
-  </section>
+    <div id="CartPopupRoot"></div>
+  
 
 
-  <script src="/js/dist/vendors~CartBtn.js"></script>
+  <script src="/js/dist/vendors~CartBtn~CartPopup.js"></script>
   <script src="/js/dist/CartBtn.js"></script>
+  <script src="/js/dist/CartPopup.js"></script>
 </body>
 </html>
